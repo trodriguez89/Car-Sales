@@ -34,7 +34,7 @@ export const initialState = {
           ...state,
           car : {
             ...state.car,
-            features: state.car.features.filter(item => item.id !== action.payload.id)
+            features: state.car.features.filter(item => item.id != action.payload.id)
           }
         }
       case UPDATE_TOTAL:
